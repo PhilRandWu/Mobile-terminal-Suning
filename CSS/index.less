@@ -1,0 +1,286 @@
+// 首页的 less 文件
+// 导入 common.less文件
+@import "common.less";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+// 搜素框
+@baseFont: 50;
+.search-content {
+    width: 15rem;
+    height: (200rem / @baseFont);
+    background-color: #FFDB47;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    .icon {
+        display: flex;
+        width: 15rem;
+        height: (88rem / @baseFont);
+        // position: fixed;
+        // top: 0;
+        // left: 50%;
+        // transform: translateX(-50%);
+        .classify {
+            width: (44rem / @baseFont);
+            height: (70rem / @baseFont);
+            margin: (11rem / @baseFont) (25rem / @baseFont) (7rem / @baseFont) (24rem / @baseFont);
+            background: url(../images/classify.png) no-repeat;
+            // 背景缩放
+            background-size: 100% 100%;
+        }
+        .search{
+            flex: 1;
+            background: url(../images/search.gif) no-repeat;
+            background-size: 100% 100%;
+            background-position: (25rem / @baseFont) (6rem / @baseFont);
+        }
+        .login{
+            width: (44rem / @baseFont);
+            height: (70rem / @baseFont);
+            margin: (11rem / @baseFont) (25rem / @baseFont) (7rem / @baseFont) (24rem / @baseFont);
+            background: url(../images/login.png) no-repeat;
+            // 背景缩放
+            background-size: 100% 100%;
+        }
+    }
+    .searchColumn {
+            input {
+                width: (702rem / @baseFont);
+                height: (50rem / @baseFont);
+                border: 0;
+                border-radius: (33rem / @baseFont);
+                margin-left: (20rem / @baseFont);
+                outline: none;
+                font-size: (20rem / @baseFont);
+                text-indent: 0.5rem;
+                color: #999;
+            }
+    }
+    
+}
+// banner部分
+    .bannerBody {
+        width: 15rem;
+        height: (229rem / @baseFont);
+        margin-top: (200rem / @baseFont);
+        background-image: linear-gradient(#FFDB47, #fff, #eee);
+        border-radius: 0 0 (10rem / @baseFont) (10rem / @baseFont);
+        .banner {
+            width: (702rem / @baseFont);
+            height: (229rem / @baseFont);
+            margin: 0 auto;
+            .slider {
+                margin: 0 auto;
+                position: relative;
+                li {
+                    width: (702rem / @baseFont);
+                    height: (229rem / @baseFont);
+                    position: absolute;
+                    display: none;
+                    &:first-child {
+                        display: block;
+                    }
+                }
+                .arrow {
+                    display: none;
+                    width: 15rem;
+                    height: (110rem / @baseFont);
+                    .arrow-left{
+                        font-family: "SimSun", "宋体";
+                        width: (30rem / @baseFont);
+                        height: (60rem / @baseFont);
+                        background-color: rgba(0, 0, 0, 0.3);
+                        position: absolute;
+                        top: (80rem / @baseFont);
+                        cursor: pointer;
+                        text-align: center;
+                        line-height: (60rem / @baseFont);
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: (50rem / @baseFont);
+                        left: 0;
+                        border-radius: 0 (20rem / @baseFont)  (20rem / @baseFont) 0;
+                        &:hover {
+                            background-color: rgba(0, 0, 0, .5);
+                        }
+                    }
+                    .arrow-right {
+                        font-family: "SimSun", "宋体";
+                        width: (30rem / @baseFont);
+                        height: (60rem / @baseFont);
+                        background-color: rgba(0, 0, 0, 0.3);
+                        position: absolute;
+                        top: (80rem / @baseFont);
+                        cursor: pointer;
+                        text-align: center;
+                        line-height: (60rem / @baseFont);
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: (50rem / @baseFont);
+                        right: 0;
+                        border-radius: (20rem / @baseFont) 0 0 (20rem / @baseFont);
+                        &:hover {
+                            background-color: rgba(0, 0, 0, .5);
+                        }
+                    }
+                }
+                &:hover .arrow {
+                    display: block;
+                }
+            }
+        }
+    }
+    // 广告部分
+    .ad{
+        width: 15rem;
+        height: (198 / @baseFont);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // nav模块
+    .nav {
+        width: 15rem;
+        height: (284rem / @baseFont);
+        background-image: url(../images/bg1.jpg);
+        background-size: 100% 100%;
+        a {
+            float: left;
+            width: 3rem;
+            height: (142rem / @baseFont);
+            img {
+                display: block;
+                width: (84rem / @baseFont);
+                height: (84rem / @baseFont);
+                margin: (10rem / @baseFont) auto 0;
+            }
+            span {
+                display: block;
+                color: #666;
+                width: (150rem / @baseFont);
+                height: (28rem / @baseFont);
+                line-height: (28rem / @baseFont);
+                font-size: (22rem / @baseFont);
+                margin: (5rem / @baseFont) 0 0;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        }
+    }
+    // newPeople页面
+    .newPeople {
+        width: 15rem;
+        height: (234rem / @baseFont);
+        a{
+            float: left;
+            .new1 {
+                width: (373.5rem / @baseFont);
+                height: (234rem / @baseFont);
+                margin-right: (1.99rem / @baseFont);
+            }
+            .new2 {
+                    width: (186.25rem / @baseFont);
+                    height: (234rem / @baseFont);  
+            }
+            .new3 {
+                    width: (186.25rem / @baseFont);
+                    height: (234rem / @baseFont);
+                    margin-left: (1.99rem / @baseFont);
+            }
+        }
+        
+    }
+    // 精品栏目
+    .content {
+        width: (702rem / @baseFont);
+        height: (586rem / @baseFont);
+        background-color: #fff;
+        margin: (15rem / @baseFont) auto;
+        .cloumn {
+            width: (350rem / @baseFont);
+            height: (268rem / @baseFont);
+            float: left;
+            margin-bottom: (20rem / @baseFont);
+            .cloumn-title {
+                width: (112rem / @baseFont);
+                height: (40rem / @baseFont);
+                font-size: (28rem / @baseFont);
+                margin: (18rem / @baseFont) (8rem / @baseFont) 0 (24rem / @baseFont);
+                color: #333;
+            }
+            .small-title {
+                width: (300rem / @baseFont);
+                height: (30rem / @baseFont);
+                font-size: (24rem / @baseFont);
+                margin: (4rem / @baseFont) 0 0 (24rem / @baseFont);
+                color: #999;
+            }
+            .contentSum {
+                width: (280rem / @baseFont);
+                height: (148rem / @baseFont);
+                margin: 0 auto;
+                .Lcloumn-content {
+                    width: (120rem / @baseFont);
+                    height: (148rem / @baseFont);
+                    float: left;
+                    margin-top: (20rem / @baseFont);
+                    a {
+                        display: block;
+                        width: (120rem / @baseFont);
+                        height: (120rem / @baseFont);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    span {
+                        display: block;
+                        width: (150rem / @baseFont);
+                        height: (54rem / @baseFont);
+                        font-size: (22rem / @baseFont);
+                        text-align: center;
+                        line-height: (54rem / @baseFont);
+                        strong {
+                            font-size: (26rem / @baseFont);
+                        }
+                    }
+                }
+                .Rcloumn-content {
+                    width: (120rem / @baseFont);
+                    height: (148rem / @baseFont);
+                    float: right;
+                    margin-top: (20rem / @baseFont);
+                    a {
+                        display: block;
+                        width: (120rem / @baseFont);
+                        height: (120rem / @baseFont);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    span {
+                        display: block;
+                        width: (150rem / @baseFont);
+                        height: (54rem / @baseFont);
+                        font-size: (22rem / @baseFont);
+                        text-align: center;
+                        line-height: (54rem / @baseFont);
+                        strong {
+                            font-size: (26rem / @baseFont);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }

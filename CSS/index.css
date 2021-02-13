@@ -1,0 +1,332 @@
+/*设置常见的屏幕尺寸 修改里面的 html 文字大小*/
+/* 一定要写到最前边 */
+html {
+  font-size: 50px;
+}
+/*320*/
+/*我们定义一个划分的份数的变量 为( 15 份*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 411px) {
+  html {
+    font-size: 27.4px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+.search-content {
+  width: 15rem;
+  height: 4rem;
+  background-color: #FFDB47;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.search-content .icon {
+  display: flex;
+  width: 15rem;
+  height: 1.76rem;
+}
+.search-content .icon .classify {
+  width: 0.88rem;
+  height: 1.4rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background: url(../images/classify.png) no-repeat;
+  background-size: 100% 100%;
+}
+.search-content .icon .search {
+  flex: 1;
+  background: url(../images/search.gif) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0.5rem 0.12rem;
+}
+.search-content .icon .login {
+  width: 0.88rem;
+  height: 1.4rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background: url(../images/login.png) no-repeat;
+  background-size: 100% 100%;
+}
+.search-content .searchColumn input {
+  width: 14.04rem;
+  height: 1rem;
+  border: 0;
+  border-radius: 0.66rem;
+  margin-left: 0.4rem;
+  outline: none;
+  font-size: 0.4rem;
+  text-indent: 0.5rem;
+  color: #999;
+}
+.bannerBody {
+  width: 15rem;
+  height: 4.58rem;
+  margin-top: 4rem;
+  background-image: linear-gradient(#FFDB47, #fff, #eee);
+  border-radius: 0 0 0.2rem 0.2rem;
+}
+.bannerBody .banner {
+  width: 14.04rem;
+  height: 4.58rem;
+  margin: 0 auto;
+}
+.bannerBody .banner .slider {
+  margin: 0 auto;
+  position: relative;
+}
+.bannerBody .banner .slider li {
+  width: 14.04rem;
+  height: 4.58rem;
+  position: absolute;
+  display: none;
+}
+.bannerBody .banner .slider li:first-child {
+  display: block;
+}
+.bannerBody .banner .slider .arrow {
+  display: none;
+  width: 15rem;
+  height: 2.2rem;
+}
+.bannerBody .banner .slider .arrow .arrow-left {
+  font-family: "SimSun", "宋体";
+  width: 0.6rem;
+  height: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  left: 0;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+.bannerBody .banner .slider .arrow .arrow-left:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bannerBody .banner .slider .arrow .arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 0.6rem;
+  height: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  right: 0;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+.bannerBody .banner .slider .arrow .arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bannerBody .banner .slider:hover .arrow {
+  display: block;
+}
+.ad {
+  width: 15rem;
+  height: 3.96;
+}
+.ad img {
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  width: 15rem;
+  height: 5.68rem;
+  background-image: url(../images/bg1.jpg);
+  background-size: 100% 100%;
+}
+.nav a {
+  float: left;
+  width: 3rem;
+  height: 2.84rem;
+}
+.nav a img {
+  display: block;
+  width: 1.68rem;
+  height: 1.68rem;
+  margin: 0.2rem auto 0;
+}
+.nav a span {
+  display: block;
+  color: #666;
+  width: 3rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.44rem;
+  margin: 0.1rem 0 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.newPeople {
+  width: 15rem;
+  height: 4.68rem;
+}
+.newPeople a {
+  float: left;
+}
+.newPeople a .new1 {
+  width: 7.47rem;
+  height: 4.68rem;
+  margin-right: 0.0398rem;
+}
+.newPeople a .new2 {
+  width: 3.725rem;
+  height: 4.68rem;
+}
+.newPeople a .new3 {
+  width: 3.725rem;
+  height: 4.68rem;
+  margin-left: 0.0398rem;
+}
+.content {
+  width: 14.04rem;
+  height: 11.72rem;
+  background-color: #fff;
+  margin: 0.3rem auto;
+}
+.content .cloumn {
+  width: 7rem;
+  height: 5.36rem;
+  float: left;
+  margin-bottom: 0.4rem;
+}
+.content .cloumn .cloumn-title {
+  width: 2.24rem;
+  height: 0.8rem;
+  font-size: 0.56rem;
+  margin: 0.36rem 0.16rem 0 0.48rem;
+  color: #333;
+}
+.content .cloumn .small-title {
+  width: 6rem;
+  height: 0.6rem;
+  font-size: 0.48rem;
+  margin: 0.08rem 0 0 0.48rem;
+  color: #999;
+}
+.content .cloumn .contentSum {
+  width: 5.6rem;
+  height: 2.96rem;
+  margin: 0 auto;
+}
+.content .cloumn .contentSum .Lcloumn-content {
+  width: 2.4rem;
+  height: 2.96rem;
+  float: left;
+  margin-top: 0.4rem;
+}
+.content .cloumn .contentSum .Lcloumn-content a {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.content .cloumn .contentSum .Lcloumn-content a img {
+  width: 100%;
+  height: 100%;
+}
+.content .cloumn .contentSum .Lcloumn-content span {
+  display: block;
+  width: 3rem;
+  height: 1.08rem;
+  font-size: 0.44rem;
+  text-align: center;
+  line-height: 1.08rem;
+}
+.content .cloumn .contentSum .Lcloumn-content span strong {
+  font-size: 0.52rem;
+}
+.content .cloumn .contentSum .Rcloumn-content {
+  width: 2.4rem;
+  height: 2.96rem;
+  float: right;
+  margin-top: 0.4rem;
+}
+.content .cloumn .contentSum .Rcloumn-content a {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.content .cloumn .contentSum .Rcloumn-content a img {
+  width: 100%;
+  height: 100%;
+}
+.content .cloumn .contentSum .Rcloumn-content span {
+  display: block;
+  width: 3rem;
+  height: 1.08rem;
+  font-size: 0.44rem;
+  text-align: center;
+  line-height: 1.08rem;
+}
+.content .cloumn .contentSum .Rcloumn-content span strong {
+  font-size: 0.52rem;
+}
